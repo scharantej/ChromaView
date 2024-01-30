@@ -1,0 +1,13 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Colors</h1>
+<ul>
+{% for color in colors %}
+<li><a href="/color/{{ color.color_name }}">{{ color.color_name }}</a></li>
+{% endfor %}
+</ul>
+{% endblock %}
+
+
